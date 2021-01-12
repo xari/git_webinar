@@ -1,11 +1,7 @@
 # Quick question: "Who knows how to create their own timer function?"
 
 reactive_timer <- function() {
-  start_time <- Sys.time()
-  
-  return(function() {
-    return(Sys.time() - start_time)
-  })
+
 }
 
 # Calling this function will start the timer, and it will return a function that we can use to check how much time has elapsed since the timer started.
